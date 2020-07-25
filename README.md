@@ -19,3 +19,8 @@ Cloning Airbnb with Python, Django, Tailwind and more...
 - django-admin startapp converstations
 - django-admin startapp lists
 - django-admin startapp reservations
+
+
+## Migrations
+- python manage.py makemigrations
+- python manage.py migrate
