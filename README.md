@@ -4,7 +4,7 @@ Cloning Airbnb with Python, Django, Tailwind and more...
 
 
 ## install
-- Python3, Django, 
+- Python3, Django, django-countries, pillow
 
 
 ## Project Start
