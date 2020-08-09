@@ -6,7 +6,7 @@ class Conversation(core_models.TimeStampedModel):
 
     """ Conversation Model Definition """
 
-     participants = models.ManyToManyField(
+    participants = models.ManyToManyField(
         "users.User", related_name="converstation", blank=True
     )
 
