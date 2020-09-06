@@ -19,7 +19,6 @@ class PhotoInline(admin.TabularInline):
     model = models.Photo
 
 
-
 @admin.register(models.Room)
 class RoomAdmin(admin.ModelAdmin):
 
