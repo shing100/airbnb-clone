@@ -24,3 +24,13 @@ Cloning Airbnb with Python, Django, Tailwind and more...
 ## Migrations
 - python manage.py makemigrations
 - python manage.py migrate
+
+
+## seed 
+- python manage.py seed_amenities
+- python manage.py seed_users --number 50
+- python manage.py seed_rooms --number 100
+- python manage.py seed_reviews --number 200
+- python manage.py seed_list --number 50
+- python manage.py seed_reservations --number 50
+
