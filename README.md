@@ -35,3 +35,7 @@ Cloning Airbnb with Python, Django, Tailwind and more...
 - python manage.py seed_list --number 50
 - python manage.py seed_reservations --number 50
 
+## tailwind
+- npm i gulp gulp-postcss gulp-sass gulp-csso node-sass -D
+- npm install tailwindcss -D
+- npm i autoprefixer -D
