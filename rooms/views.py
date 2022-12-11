@@ -3,12 +3,13 @@ from django.shortcuts import render
 from django.core.paginator import Paginator
 from . import models, forms
 
+
 class HomeView(ListView):
 
     """ HomeView Definition """
 
     model = models.Room
-    paginate_by = 10
+    paginate_by = 12
     paginate_orphans = 5
     ordering = "created"
     context_object_name = "rooms"
@@ -88,14 +89,16 @@ class SearchView(View):
                 for facility in facilities:
                     filter_args["facilities"] = facility
 
-                qs = models.Room.objects.filter(**filter_args).order_by("-created")
+                qs = models.Room.objects.filter(
+                    **filter_args).order_by("-created")
 
                 paginator = Paginator(qs, 10, orphans=5)
                 page = request.GET.get("page", 1)
                 rooms = paginator.get_page(page)
 
                 return render(
-                    request, "rooms/search.html", {"form": form, "rooms": rooms}
+                    request, "rooms/search.html", {
+                        "form": form, "rooms": rooms}
                 )
         else:
             form = forms.SearchForm()
