@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 .search-box {
   transition: box-shadow 0.2s linear;
@@ -40,5 +39,10 @@ form {
     }
   }
 }
+
+.border-section {
+  @apply border-b border-gray-400 pb-8 mt-8;
+}
+
 
 @tailwind utilities;
